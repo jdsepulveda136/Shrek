@@ -19,41 +19,46 @@ namespace Shrek
 
         private void Bt_calcula_Click(object sender, EventArgs e)
         {
-            double avenca;
+            double avenca_inicial=0;
+            double avenca_final = 0;
+            double descontos = 0;
+            double agravamento = 0;
 
-            avenca = Convert.ToUInt32(txt_base.Text);
+            avenca_inicial = Convert.ToUInt32(txt_base.Text);
 
             //Desconto da idade
             float ano = Convert.ToInt32(txt_nascimento.Text);
             if (ano>=2000)
             {
-                avenca = avenca * 0.90;
+                descontos = descontos+(avenca_inicial * 0.10);
             }
 
             //desconto escalão
             if (chk_escalao.Checked)
             {
-                avenca = avenca * 0.9;
+                descontos = descontos + (avenca_inicial * 0.10);
             }
 
             //desconto sócio
             if (chk_socio.Checked)
             {
-                avenca = avenca * 0.95;
+                descontos = descontos + (avenca_inicial * 0.05);
             }
 
             //agravamento
             if (chk_agrava.Checked)
             {
-                avenca = avenca + 12;
+                agravamento = 12;
             }
 
             //desconto por residir no disytrito
 
 
 
+            //calculo da avenca final
+            avenca_final = avenca_inicial - descontos + agravamento;
 
-            txt_result.Text = Convert.ToString(avenca);
+            txt_result.Text = Convert.ToString(avenca_final);
         }
     }
 }
