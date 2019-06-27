@@ -96,9 +96,9 @@
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Image = global::Shrek.Properties.Resources.CARETA3;
-            this.pictureBox1.Location = new System.Drawing.Point(507, 58);
+            this.pictureBox1.Location = new System.Drawing.Point(535, 58);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(281, 281);
+            this.pictureBox1.Size = new System.Drawing.Size(244, 227);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
@@ -127,7 +127,7 @@
             // chk_escalao
             // 
             this.chk_escalao.AutoSize = true;
-            this.chk_escalao.Location = new System.Drawing.Point(223, 258);
+            this.chk_escalao.Location = new System.Drawing.Point(223, 244);
             this.chk_escalao.Name = "chk_escalao";
             this.chk_escalao.Size = new System.Drawing.Size(162, 17);
             this.chk_escalao.TabIndex = 8;
@@ -137,7 +137,7 @@
             // chk_socio
             // 
             this.chk_socio.AutoSize = true;
-            this.chk_socio.Location = new System.Drawing.Point(223, 282);
+            this.chk_socio.Location = new System.Drawing.Point(223, 268);
             this.chk_socio.Name = "chk_socio";
             this.chk_socio.Size = new System.Drawing.Size(132, 17);
             this.chk_socio.TabIndex = 9;
@@ -147,7 +147,7 @@
             // chk_agrava
             // 
             this.chk_agrava.AutoSize = true;
-            this.chk_agrava.Location = new System.Drawing.Point(223, 306);
+            this.chk_agrava.Location = new System.Drawing.Point(223, 292);
             this.chk_agrava.Name = "chk_agrava";
             this.chk_agrava.Size = new System.Drawing.Size(168, 17);
             this.chk_agrava.TabIndex = 10;
@@ -157,7 +157,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(45, 368);
+            this.label5.Location = new System.Drawing.Point(45, 354);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(96, 13);
             this.label5.TabIndex = 11;
@@ -166,7 +166,7 @@
             // rb_sim
             // 
             this.rb_sim.AutoSize = true;
-            this.rb_sim.Location = new System.Drawing.Point(158, 368);
+            this.rb_sim.Location = new System.Drawing.Point(158, 354);
             this.rb_sim.Name = "rb_sim";
             this.rb_sim.Size = new System.Drawing.Size(42, 17);
             this.rb_sim.TabIndex = 12;
@@ -177,7 +177,7 @@
             // rb_nao
             // 
             this.rb_nao.AutoSize = true;
-            this.rb_nao.Location = new System.Drawing.Point(206, 368);
+            this.rb_nao.Location = new System.Drawing.Point(206, 354);
             this.rb_nao.Name = "rb_nao";
             this.rb_nao.Size = new System.Drawing.Size(45, 17);
             this.rb_nao.TabIndex = 13;
@@ -188,7 +188,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(349, 367);
+            this.label6.Location = new System.Drawing.Point(349, 353);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(66, 13);
             this.label6.TabIndex = 14;
@@ -201,7 +201,7 @@
             "Braga",
             "Amares",
             "Guimarães"});
-            this.cmb_concelho.Location = new System.Drawing.Point(421, 364);
+            this.cmb_concelho.Location = new System.Drawing.Point(421, 350);
             this.cmb_concelho.Name = "cmb_concelho";
             this.cmb_concelho.Size = new System.Drawing.Size(121, 21);
             this.cmb_concelho.TabIndex = 15;
@@ -226,7 +226,7 @@
             // lbl_mensagem
             // 
             this.lbl_mensagem.AutoSize = true;
-            this.lbl_mensagem.Location = new System.Drawing.Point(48, 409);
+            this.lbl_mensagem.Location = new System.Drawing.Point(48, 395);
             this.lbl_mensagem.Name = "lbl_mensagem";
             this.lbl_mensagem.Size = new System.Drawing.Size(0, 13);
             this.lbl_mensagem.TabIndex = 18;

@@ -24,14 +24,25 @@ namespace Shrek
             double descontos = 0;
             double agravamento = 0;
 
-            avenca_inicial = Convert.ToUInt32(txt_base.Text);
+            try
+            {
+                avenca_inicial = Convert.ToUInt32(txt_base.Text);
+            }
+            catch (Exception)
+            {
+
+                lbl_mensagem.Text = "Valor da avença inválido";
+            }
+
+
+            
+            float ano = Convert.ToInt32(txt_nascimento.Text);
 
             //Desconto da idade
-            float ano = Convert.ToInt32(txt_nascimento.Text);
-            if (ano>=2000)
+            if (ano >= 2000)
             {
-                descontos = descontos+(avenca_inicial * 0.10);
-            }
+                descontos = descontos + (avenca_inicial * 0.10);
+            }      
 
             //desconto escalão
             if (chk_escalao.Checked)
@@ -64,9 +75,21 @@ namespace Shrek
             }
 
             //calculo da avenca final
-            avenca_final = avenca_inicial - descontos + agravamento;
+            if (txt_nome.TextLength==0 )
+            {
+                lbl_mensagem.Text = "Por favor preencha o nome.";
+            }
 
-            txt_result.Text = Convert.ToString(avenca_final);
+            if (ano < 2019)
+            {
+                avenca_final = avenca_inicial - descontos + agravamento;
+
+                txt_result.Text = Convert.ToString(avenca_final);
+            }
+            else
+            {
+                    lbl_mensagem.Text = "Ano fora do intervalo.";
+            }
         }
     }
 }
