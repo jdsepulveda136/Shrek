@@ -43,9 +43,10 @@
             this.rb_sim = new System.Windows.Forms.RadioButton();
             this.rb_nao = new System.Windows.Forms.RadioButton();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmb_concelho = new System.Windows.Forms.ComboBox();
             this.bt_calcula = new System.Windows.Forms.Button();
             this.txt_result = new System.Windows.Forms.TextBox();
+            this.lbl_mensagem = new System.Windows.Forms.Label();
             label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -193,17 +194,17 @@
             this.label6.TabIndex = 14;
             this.label6.Text = "CONCELHO";
             // 
-            // comboBox1
+            // cmb_concelho
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmb_concelho.FormattingEnabled = true;
+            this.cmb_concelho.Items.AddRange(new object[] {
             "Braga",
             "Amares",
             "Guimarães"});
-            this.comboBox1.Location = new System.Drawing.Point(421, 364);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 15;
+            this.cmb_concelho.Location = new System.Drawing.Point(421, 364);
+            this.cmb_concelho.Name = "cmb_concelho";
+            this.cmb_concelho.Size = new System.Drawing.Size(121, 21);
+            this.cmb_concelho.TabIndex = 15;
             // 
             // bt_calcula
             // 
@@ -222,14 +223,23 @@
             this.txt_result.Size = new System.Drawing.Size(100, 20);
             this.txt_result.TabIndex = 17;
             // 
+            // lbl_mensagem
+            // 
+            this.lbl_mensagem.AutoSize = true;
+            this.lbl_mensagem.Location = new System.Drawing.Point(48, 409);
+            this.lbl_mensagem.Name = "lbl_mensagem";
+            this.lbl_mensagem.Size = new System.Drawing.Size(0, 13);
+            this.lbl_mensagem.TabIndex = 18;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbl_mensagem);
             this.Controls.Add(this.txt_result);
             this.Controls.Add(this.bt_calcula);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmb_concelho);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.rb_nao);
             this.Controls.Add(this.rb_sim);
@@ -269,9 +279,10 @@
         private System.Windows.Forms.RadioButton rb_sim;
         private System.Windows.Forms.RadioButton rb_nao;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmb_concelho;
         private System.Windows.Forms.Button bt_calcula;
         private System.Windows.Forms.TextBox txt_result;
+        private System.Windows.Forms.Label lbl_mensagem;
     }
 }
 

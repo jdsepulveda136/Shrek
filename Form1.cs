@@ -51,9 +51,17 @@ namespace Shrek
                 agravamento = 12;
             }
 
-            //desconto por residir no disytrito
+            //desconto por residir no distrito
+            if (rb_sim.Checked)
+            {
+                descontos = descontos + (avenca_inicial * 0.01);
+            }
 
-
+            //Desconto por morar em Amares
+            if (cmb_concelho.Text=="Amares")
+            {
+                descontos = descontos + (avenca_inicial * 0.20);
+            }
 
             //calculo da avenca final
             avenca_final = avenca_inicial - descontos + agravamento;
