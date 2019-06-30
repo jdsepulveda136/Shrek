@@ -116,6 +116,7 @@
             this.txt_nascimento.Name = "txt_nascimento";
             this.txt_nascimento.Size = new System.Drawing.Size(120, 20);
             this.txt_nascimento.TabIndex = 6;
+            this.txt_nascimento.TextChanged += new System.EventHandler(this.Txt_nascimento_TextChanged);
             // 
             // txt_base
             // 
@@ -123,6 +124,7 @@
             this.txt_base.Name = "txt_base";
             this.txt_base.Size = new System.Drawing.Size(120, 20);
             this.txt_base.TabIndex = 7;
+            this.txt_base.TextChanged += new System.EventHandler(this.Txt_base_TextChanged);
             // 
             // chk_escalao
             // 
@@ -133,6 +135,7 @@
             this.chk_escalao.TabIndex = 8;
             this.chk_escalao.Text = "Desconto de escalão? (10%)";
             this.chk_escalao.UseVisualStyleBackColor = true;
+            this.chk_escalao.CheckedChanged += new System.EventHandler(this.Chk_escalao_CheckedChanged);
             // 
             // chk_socio
             // 
@@ -143,6 +146,7 @@
             this.chk_socio.TabIndex = 9;
             this.chk_socio.Text = "Desconto  sócio? (5%)";
             this.chk_socio.UseVisualStyleBackColor = true;
+            this.chk_socio.CheckedChanged += new System.EventHandler(this.Chk_socio_CheckedChanged);
             // 
             // chk_agrava
             // 
@@ -153,6 +157,7 @@
             this.chk_agrava.TabIndex = 10;
             this.chk_agrava.Text = "Tem agravamento? (12 euros)";
             this.chk_agrava.UseVisualStyleBackColor = true;
+            this.chk_agrava.CheckedChanged += new System.EventHandler(this.Chk_agrava_CheckedChanged);
             // 
             // label5
             // 
@@ -173,6 +178,7 @@
             this.rb_sim.TabStop = true;
             this.rb_sim.Text = "Sim";
             this.rb_sim.UseVisualStyleBackColor = true;
+            this.rb_sim.CheckedChanged += new System.EventHandler(this.Rb_sim_CheckedChanged);
             // 
             // rb_nao
             // 
@@ -184,6 +190,7 @@
             this.rb_nao.TabStop = true;
             this.rb_nao.Text = "Não";
             this.rb_nao.UseVisualStyleBackColor = true;
+            this.rb_nao.CheckedChanged += new System.EventHandler(this.Rb_nao_CheckedChanged);
             // 
             // label6
             // 
@@ -205,10 +212,11 @@
             this.cmb_concelho.Name = "cmb_concelho";
             this.cmb_concelho.Size = new System.Drawing.Size(121, 21);
             this.cmb_concelho.TabIndex = 15;
+            this.cmb_concelho.SelectedIndexChanged += new System.EventHandler(this.Cmb_concelho_SelectedIndexChanged);
             // 
             // bt_calcula
             // 
-            this.bt_calcula.Location = new System.Drawing.Point(507, 409);
+            this.bt_calcula.Location = new System.Drawing.Point(580, 349);
             this.bt_calcula.Name = "bt_calcula";
             this.bt_calcula.Size = new System.Drawing.Size(75, 23);
             this.bt_calcula.TabIndex = 16;
@@ -218,9 +226,10 @@
             // 
             // txt_result
             // 
-            this.txt_result.Location = new System.Drawing.Point(589, 409);
+            this.txt_result.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_result.Location = new System.Drawing.Point(662, 349);
             this.txt_result.Name = "txt_result";
-            this.txt_result.Size = new System.Drawing.Size(100, 20);
+            this.txt_result.Size = new System.Drawing.Size(100, 31);
             this.txt_result.TabIndex = 17;
             // 
             // lbl_mensagem
